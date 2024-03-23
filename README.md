@@ -22,7 +22,7 @@ The Simon Game is a classic memory game where players are challenged to remember
 - Alternatively, press the corresponding keys on your keyboard to repeat the sequence.
 
 ## Demo
-Check out a live demo of the Simon Game [here](https://your-demo-url.com).
+Check out a live demo of the Simon Game [here](https://simongame.freewebhostmost.com/).
 
 ## Contributing
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please submit an issue or open a pull request.
