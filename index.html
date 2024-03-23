@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="leftpanel">
+      <h1>Simon Game</h1>
+      <h2>Press any to get Started!</h2>
+
+      <div class="sameline">
+        <h3>Highscore :</h3>
+        <h4>0</h4>
+      </div>
+      <h4><i>by :-Mohd Mursaleen</i></h4>
+    </div>
+    <div class="rightpanel">
+      <div class="container" id="cont">
+        <div class="firstline">
+          <div class="btn red" type="button" id="red"></div>
+          <div class="btn yellow" type="button" id="yellow"></div>
+        </div>
+        <div class="secondline">
+          <div class="btn green" type="button" id="green"></div>
+          <div class="btn blue" type="button" id="blue"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      function simulateSpaceBarPress() {
+        console.log("pressed");
+        // Create a new keyboard event for the space bar key press
+        const spaceKeyPress = new KeyboardEvent("keydown", {
+          key: " ",
+          keyCode: 32,
+          which: 32,
+          code: "Space",
+          bubbles: true,
+          cancelable: true,
+        });
+
+        // Dispatch the keyboard event
+        document.dispatchEvent(spaceKeyPress);
+      }
+      document
+        .getElementById("play")
+        .addEventListener("click", simulateSpaceBarPress);
+    </script>
+  </body>
+</html>

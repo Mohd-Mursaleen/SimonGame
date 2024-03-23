@@ -1,0 +1,145 @@
+body {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.sameline {
+  display: flex;
+  justify-content: center;
+}
+.leftpanel {
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.rightpanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.container {
+  margin-top: 125px;
+
+  height: 600px;
+  width: 80%;
+  background-color: #98dfaf;
+  border-radius: 20%;
+  border: 10px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 1.5rem;
+}
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+h4 {
+  font-size: 30px;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.red {
+  background-color: #da5a80;
+}
+
+.blue {
+  background-color: #819ffa;
+}
+
+.yellow {
+  background-color: #fa9b44;
+}
+
+.green {
+  background-color: #62aac1;
+}
+
+.flash {
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
+.greeen {
+  background-color: rgb(35, 132, 75);
+  transition: background-color 0.5s ease;
+}
+@media (max-width: 1335px) {
+  .container {
+    height: 500px !important;
+  }
+  .btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1.5rem;
+  }
+}
+@media (max-width: 1025px) {
+  .leftpanel {
+    height: 250px;
+    margin-bottom: 0;
+  }
+  .rightpanel {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+  }
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .container {
+    position: absolute;
+    margin-top: 5px;
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .btn {
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1rem;
+  }
+  body {
+    display: block;
+  }
+}
